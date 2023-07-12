@@ -103,6 +103,9 @@ button {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   background: var(--primary-white-bg);
+  padding-top: 26px;
+  padding-bottom: 24px;
+  padding-left: 16px;
 }
 .header-container {
   display: flex;
@@ -156,7 +159,11 @@ button {
   text-transform: uppercase;
 }
 .logo-link {
-  margin-right: 76px;
+  /* margin-right: 76px; */
+}
+
+.logo-link {
+  margin-right: 297px;
 }
 .logo-black {
   color: var(--secondary-black-cl);
@@ -179,6 +186,13 @@ button {
   gap: 40px;
   padding: 24px 0;
 }
+
+@media only screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .link-current {
   padding: 24px 0;
 }
@@ -210,6 +224,12 @@ button {
 .address {
   font-style: normal;
 }
+
+@media only screen and (max-width: 767px) {
+  .address {
+    display: none;
+  }
+}
 .address-nav a {
   color: var(--primary-black-cl);
 }
@@ -224,6 +244,11 @@ button {
 }
 
 .address-link-active {
+}
+
+.menu-toggle-icon {
+  background-color: none;
+  stroke: red;
 }
 /* hero */
 
@@ -363,7 +388,7 @@ button {
 
 @media only screen and (min-width: 1158px) {
   .adv-item {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 3 * 24px) / 4);
   }
 }
 
