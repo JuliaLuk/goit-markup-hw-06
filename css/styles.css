@@ -331,8 +331,9 @@ button {
 .adv-list {
   display: flex;
   flex-direction: column;
-  gap: 72px 16px;
+  gap: 72px;
 }
+
 @media only screen and (min-width: 768px) {
   .adv-list {
     display: flex;
@@ -352,12 +353,19 @@ button {
   margin-bottom: 72px;
 }
 .adv-item {
-  width: 264px;
+  max-width: 396px;
 }
 
 @media only screen and (min-width: 768px) {
   .adv-item {
-    flex-basis: calc(100%-48) / 2;
+    width: calc(100%-24px) / 2;
+    gap: 48px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .adv-item {
+    width: calc(100%-72px) / 4;
     gap: 48px;
   }
 }
@@ -392,6 +400,7 @@ button {
 }
 
 .second-title {
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
