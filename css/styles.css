@@ -321,7 +321,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
   .adv-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -342,10 +342,11 @@ button {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
   .adv-list {
-    max-width: 1128px;
-    gap: 24px;
+    max-width: 1158px;
+    gap: 72px 24px;
+    flex-direction: row;
   }
 }
 
@@ -387,7 +388,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
   .adv-containet-icon {
     display: flex;
     align-items: center;
