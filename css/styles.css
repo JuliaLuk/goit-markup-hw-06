@@ -114,7 +114,6 @@ button {
 
 /* Base styles for small devices  */
 
-
 .container {
   min-width: 320px;
   max-width: 428px;
@@ -125,22 +124,21 @@ button {
   outline: 2px solid red;
 }
 
-
 /* Tablet screen */
 
 @media screen and (min-width: 768px) {
   .container {
-  max-width: 768px;
+    max-width: 768px;
+  }
 }
-
 /* Desktop screen */
 @media screen and (min-width: 1158px) {
   .container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
-
 .header-nav {
   display: flex;
   align-items: center;
@@ -315,32 +313,31 @@ button {
 .adv-section {
   padding-top: 48px;
   padding-bottom: 48px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   .adv-section {
-   
-    
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .adv-section {
     padding-top: 60px;
-  padding-bottom: 60px;
-    
+    padding-bottom: 60px;
   }
 }
 
 .adv-list {
-  /* display: flex; */
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px 16px;
 }
 @media only screen and (min-width: 768px) {
   .adv-list {
     display: flex;
     flex-wrap: wrap;
-
+    gap: 72px 24px;
   }
 }
 
@@ -348,7 +345,6 @@ button {
   .adv-list {
     max-width: 1128px;
     gap: 24px;
-    
   }
 }
 
@@ -363,18 +359,36 @@ button {
   .adv-item {
     flex-basis: calc(100%-48) / 2;
     gap: 48px;
-    
   }
 }
 
 .adv-containet-icon {
-  display: flex;
+  display: none;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
   background-color: var(--secondary-white-bg);
   border-radius: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .adv-containet-icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .adv-containet-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--secondary-white-bg);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
 }
 
 .second-title {
