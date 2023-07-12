@@ -111,8 +111,32 @@ button {
   margin: 0;
   padding: 0;
 }
+
+/* Base styles for small devices  */
+
+
 .container {
-  width: 1158px;
+  min-width: 320px;
+  max-width: 396px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16;
+  padding-left: 16;
+  outline: 2px solid red;
+}
+
+
+/* Tablet screen */
+
+@media screen and (min-width: 736px) {
+  .container {
+  max-width: 736px;
+}
+
+/* Desktop screen */
+@media screen and (min-width: 1440px) {
+  .container {
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -121,6 +145,7 @@ button {
   display: flex;
   align-items: center;
 }
+
 /* logo */
 .logo {
   color: var(--primary-accent-cl);
@@ -288,15 +313,57 @@ button {
 /* our advantage */
 
 .adv-section {
-  padding: 120px 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+  .adv-section {
+    
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .adv-section {
+    padding-top: 60px;
+  padding-bottom: 60px;
+    
+  }
 }
 
 .adv-list {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .adv-list {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .adv-list {
+    max-width: 1128px;
+    gap: 24px;
+    
+  }
+}
+
+.adv-list:not(:last-child) {
+  margin-bottom: 72px;
 }
 .adv-item {
   width: 264px;
+}
+
+@media only screen and (min-width: 768px) {
+  .adv-item {
+    flex-basis: calc(100%-48) / 2;
+    gap: 48px;
+    
+  }
 }
 
 .adv-containet-icon {
