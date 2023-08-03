@@ -672,8 +672,16 @@ button {
 }
 /* customers */
 
-.customers {
-  padding: 120px 0;
+@media only screen and (max-width: 1157px) {
+  .customers {
+    padding: 96px 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .customers {
+    padding: 120px 0;
+  }
 }
 
 .customers-title {
@@ -685,11 +693,24 @@ button {
   margin-bottom: 72px;
   color: var(--secondary-black-cl);
 }
-.customers-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+
+@media only screen and (max-width: 768px) {
+  .customers-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 24px;
+  }
 }
+
+@media only screen and (min-width: 1158px) {
+  .customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
 .customers-item {
   width: calc((100% - 120px) / 6);
 }
