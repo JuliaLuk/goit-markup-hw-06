@@ -1307,6 +1307,9 @@ button {
   padding-bottom: 120px;
 }
 
+.filters-portfolio-container {
+}
+
 .portfolio-nav {
   display: flex;
   justify-content: center;
