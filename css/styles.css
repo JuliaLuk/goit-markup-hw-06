@@ -550,6 +550,13 @@ button {
   padding: 60px 0 120px;
 }
 
+@media only screen and (min-width: 1158px) {
+  .activity-container {
+    width: 1158px;
+    margin: 0 auto;
+  }
+}
+
 .vice-title {
   font-weight: 700;
   font-size: 36px;
@@ -579,6 +586,13 @@ button {
     width: 584px;
   }
 }
+
+@media only screen and (min-width: 1158px) {
+  .team-container {
+    width: 1158px;
+  }
+}
+
 .team {
   background-color: var(--secondary-white-bg);
   padding: 96px 0;
@@ -700,9 +714,9 @@ button {
   }
 }
 
-@media only screen and (min-width: 1157) {
+@media only screen and (min-width: 1157px) {
   .customers-container {
-    width: 1157px;
+    width: 1158px;
   }
 }
 
@@ -797,12 +811,6 @@ button {
 
 /* footer */
 
-@media only screen and (min-width: 768px) {
-  .footer-container {
-    width: 584px;
-  }
-}
-
 .footer {
   background-color: var(--secondary-black-bg);
   padding: 96px 0;
@@ -820,18 +828,18 @@ button {
   }
 }
 
-@media only screen and (min-width: 375px) {
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px;
-    align-items: center;
-    justify-content: center;
-  }
+.footer-container {
+  width: 296px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
   .footer-container {
+    width: 584px;
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
@@ -849,6 +857,7 @@ button {
     gap: 0;
     margin: 0 auto;
     justify-content: center;
+    width: 1158px;
   }
 }
 
@@ -946,7 +955,7 @@ button {
   padding-bottom: 24px;
   padding-left: 16px;
   transform: translate(-50%, -50%) scale(1);
-  width: 392px;
+  width: 290px;
   min-height: 584px;
   background-color: var(--primary-modal-bg);
   border-radius: 4px;
@@ -1123,8 +1132,6 @@ button {
 
 .modal-title {
   display: block;
-  width: 360px;
-  height: 24px;
   flex-direction: column;
   flex-shrink: 0;
   color: var(--secondary-black-cl);
@@ -1495,7 +1502,7 @@ button {
   height: 24px;
   color: var(--primary-accent-cl);
   font-family: Roboto;
-  font-size: 34px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
