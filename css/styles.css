@@ -1383,7 +1383,7 @@ button {
 }
 
 .portfolio-bloks-item {
-  width: calc((100% - 48px) / 1);
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1396,6 +1396,10 @@ button {
   .portfolio-bloks-item {
     width: calc((100% - 48px) / 3);
   }
+}
+
+.portfolio-photo {
+  width: 100%;
 }
 
 .portfolio-bloks-name {
