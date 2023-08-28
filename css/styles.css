@@ -343,32 +343,32 @@ button {
   }
 }
 
-/* @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
     background-image: var(--main-gradient),
       url(../images/hero/bg-hero-mob@2x.jpg);
   }
-} */
+}
 
-/* @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
     background-image: var(--main-gradient),
       url(../images/hero/bg-hero-tab@2x.jpg);
   }
-} */
+}
 
-/* @media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+@media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
     background-image: var(--main-gradient),
       url(../images/hero/bg-hero-dis@2x.jpg);
   }
-} */
+}
 
 .hero-title {
   max-width: 320px;
@@ -1121,6 +1121,7 @@ button {
   }
 }
 .footer-form-lable {
+  width: 100%;
 }
 
 .footer-form-lable:placeholder {
@@ -1147,7 +1148,7 @@ button {
 
 @media only screen and (max-width: 767px) {
   .footer-form-input {
-    width: 300px;
+    max-width: 398px;
   }
 }
 .footer-form-input:placeholder {
