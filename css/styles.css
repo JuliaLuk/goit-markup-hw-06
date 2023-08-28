@@ -328,28 +328,10 @@ button {
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: var(--main-gradient),
-      url(../images/hero/bg-hero-mob@2x.jpg);
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .hero {
     background-image: var(--main-gradient),
       url(../images/hero/bg-hero-tab@1x.jpg);
-  }
-}
-
-@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: var(--main-gradient),
-      url(../images/hero/bg-hero-tab@2x.jpg);
   }
 }
 
@@ -361,14 +343,32 @@ button {
   }
 }
 
-@media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+/* @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--main-gradient),
+      url(../images/hero/bg-hero-mob@2x.jpg);
+  }
+} */
+
+/* @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--main-gradient),
+      url(../images/hero/bg-hero-tab@2x.jpg);
+  }
+} */
+
+/* @media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
     background-image: var(--main-gradient),
       url(../images/hero/bg-hero-dis@2x.jpg);
   }
-}
+} */
 
 .hero-title {
   max-width: 320px;
@@ -804,6 +804,7 @@ button {
 
 .customers-item {
   width: calc((100% - 16px) / 2);
+  height: 88px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1329,11 +1330,12 @@ button {
 
 .form-submit-button {
   display: block;
-  margin-left: 95px;
+  margin-right: auto;
+  margin-left: auto;
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
-  font-style: 16px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
