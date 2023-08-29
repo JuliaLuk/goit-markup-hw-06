@@ -68,7 +68,7 @@ p {
 }
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -108,20 +108,11 @@ button {
   background: var(--primary-white-bg);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .header {
     padding: 25px 0;
   }
 }
-
-/* @media only screen and (min-width: 1158px) {
-  .header {
-    border-bottom: 1px solid --secondary-gray-bg;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    background: var(--primary-white-bg);
-  }
-} */
 
 .header-container {
   display: flex;
@@ -132,6 +123,8 @@ button {
 }
 
 /* Base styles for small devices  */
+
+/* Mobiles screen */
 
 .container {
   min-width: 320px;
@@ -148,6 +141,10 @@ button {
     max-width: 768px;
   }
 }
+
+.container.responsive {
+  max-width: 768px;
+}
 /* Desktop screen */
 
 @media screen and (min-width: 1158px) {
@@ -155,6 +152,10 @@ button {
     max-width: 1158px;
     padding: 0 15px;
   }
+}
+
+.container.responsive {
+  max-width: 1158px;
 }
 
 .header-nav {
@@ -216,7 +217,7 @@ button {
   gap: 40px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .site-nav {
     display: none;
   }
@@ -256,7 +257,7 @@ button {
   font-style: normal;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .address {
     display: none;
   }
@@ -327,22 +328,6 @@ button {
   background-position: center;
   background-size: cover;
 }
-
-@media only screen and (min-width: 768px) {
-  .hero {
-    background-image: var(--main-gradient),
-      url(../images/hero/bg-hero-tab@1x.jpg);
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .hero {
-    background-image: var(--main-gradient),
-      url(../images/hero/bg-hero-dis@1x.jpg);
-    padding: 188px 0;
-  }
-}
-
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -352,21 +337,36 @@ button {
   }
 }
 
-@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-width: 768px) {
   .hero {
     background-image: var(--main-gradient),
-      url(../images/hero/bg-hero-tab@2x.jpg);
+      url(../images/hero/bg-hero-tab@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--main-gradient),
+        url(../images/hero/bg-hero-tab@2x.jpg);
+    }
   }
 }
 
-@media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-width: 1158px) {
   .hero {
     background-image: var(--main-gradient),
-      url(../images/hero/bg-hero-dis@2x.jpg);
+      url(../images/hero/bg-hero-dis@1x.jpg);
+    padding: 188px 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--main-gradient),
+        url(../images/hero/bg-hero-dis@2x.jpg);
+    }
   }
 }
 
@@ -900,7 +900,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .footer-container-slogan {
     display: flex;
     align-items: center;
@@ -931,7 +931,7 @@ button {
   max-width: 264px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .footer-container-icon {
     display: flex;
     align-items: center;
@@ -1146,7 +1146,7 @@ button {
   outline: transparent;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .footer-form-input {
     max-width: 398px;
   }
